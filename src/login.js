@@ -80,7 +80,7 @@ function login() {
           console.error(e)
       })
       setTimeout(() => {
-        while (anns !== "Exit") {
+        while (anns.first_task !== 'Exit') {
           tasks();
         }
       }, 4000);
