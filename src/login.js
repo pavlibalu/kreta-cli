@@ -82,7 +82,9 @@ function login() {
         .catch((e) => {
           console.error(e);
         });
-      tasks();
+        setTimeout(() => {
+          tasks()
+        }, 3000)
     })
     .catch((e) => {
       console.error(e);
