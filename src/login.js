@@ -74,16 +74,15 @@ function login() {
       setTimeout(() => {
         console.log("Login successfull!");
       }, 300);
-      kreta.getStudent().then((student) => {
-          console.log(`Hello ${student.Nev}!`)
-      }).catch((e) => {
-          console.error(e)
-      })
-      setTimeout(() => {
-        while (anns.first_task !== 'Exit') {
-          tasks();
-        }
-      }, 4000);
+      kreta
+        .getStudent()
+        .then((student) => {
+          console.log(`Hello ${student.Nev}!`);
+        })
+        .catch((e) => {
+          console.error(e);
+        });
+      tasks();
     })
     .catch((e) => {
       console.error(e);
