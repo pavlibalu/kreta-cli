@@ -1,7 +1,7 @@
 function goodbye() {
-    console.log("Logging out... // Kijelentkezés...")
+    console.log("Logging out...")
     setTimeout(() => {
-        console.log("Logout successfull! // Kijelentkezés sikeres!")
+        console.log("Logout successfull!")
         return  process.exit()
     }, 3000)
 }
